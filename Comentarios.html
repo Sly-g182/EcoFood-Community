@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comentarios - EcoFood</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Css/styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">💬 Comentarios de la comunidad</h1>
+
+        <form id="comentarioForm">
+            <div class="mb-3">
+                <label for="comentario" class="form-label">Escribe tu comentario:</label>
+                <textarea id="comentario" class="form-control" rows="4" placeholder="Tu opinión nos importa..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Publicar Comentario</button>
+        </form>
+
+        <div id="comentariosGuardados" class="mt-5">
+            <h3>Comentarios publicados:</h3>>
+        </div>
+
+        <button id="borrarComentarios" class="btn btn-outline-danger mt-3">Borrar todos los comentarios</button>
+
+        <div class="mt-4">
+            <a href="index.html" class="btn btn-secondary">← Volver al inicio</a>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById("comentarioForm");
+        const areaComentario = document.getElementById("comentario");
+        const zonaComentarios = document.getElementById("comentariosGuardados");
+        const borrarBtn = document.getElementById("borrarComentarios");
+
+        function cargarComentarios() {
+            zonaComentarios.innerHTML = "<h3>Comentarios publicados:</h3>";
+            const comentarios = JSON.parse(localStorage.getItem("comentariosEcoFood")) || [];
+            if (comentarios.length === 0) {
+                zonaComentarios.innerHTML += "<p class='text-muted'>Aún no hay comentarios.</p>";
+                return;
+            }
+            comentarios.forEach(com => {
+                const p = document.createElement("p");
+                p.textContent = "• " + com;
+                zonaComentarios.appendChild(p);
+            });
+        }
+
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const comentario = areaComentario.value.trim();
+
+            if (comentario === "") {
+                alert("Por favor, escribe un comentario antes de publicarlo.");
+                return;
+            }
+
+            const comentarios = JSON.parse(localStorage.getItem("comentariosEcoFood")) || [];
+            comentarios.push(comentario);
+            localStorage.setItem("comentariosEcoFood", JSON.stringify(comentarios));
+
+            areaComentario.value = "";
+            cargarComentarios();
+        });
+
+        borrarBtn.addEventListener("click", () => {
+            if (confirm("¿Estás seguro de que quieres borrar todos los comentarios?")) {
+                localStorage.removeItem("comentariosEcoFood");
+                cargarComentarios();
+            }
+        });
+
+        cargarComentarios();
+    </script>
+</body>
+</html>
