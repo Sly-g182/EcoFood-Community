@@ -9,19 +9,28 @@
 </head>
 <body>
     <div class="home-container text-center">
-        <img src="Asset/img/LOGO.png" alt="EcoFood Logo" class="home-logo mb-4">
+        <img src="Css/img/LOGO.png" alt="EcoFood Logo" class="home-logo mb-4">
         <h1 class="display-5">¡Bienvenido/a <span id="userName">Usuario</span>! 🥦</h1>
         <p class="lead">Tu sesión se ha iniciado con éxito. Gracias por unirte a nuestra comunidad consciente.</p>
         <a href="index.html" class="btn btn-success mt-4">Ir al inicio</a>
     </div>
 
-    <script>
-        // Obtener nombre almacenado y mostrarlo
-        const userName = localStorage.getItem('userName');
-        if (userName) {
-            document.getElementById('userName').textContent = userName;
-        }
-    </script>
+    <!-- Nueva sección de productos -->
+    <div class="container mt-5">
+        <h3 class="text-center mb-4">Productos Disponibles (máx. 3)</h3>
+        <form id="productForm" class="row g-3 justify-content-center">
+            <div class="col-md-6">
+                <input type="text" id="productName" class="form-control" placeholder="Nombre del producto" required>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-success w-100">Agregar</button>
+            </div>
+        </form>
+        <ul id="productList" class="list-group mt-3"></ul>
+    </div>
+
+    <script src="Js/home.js"></script>
 </body>
 </html>
+
 
