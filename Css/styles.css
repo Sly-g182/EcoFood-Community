@@ -8,7 +8,7 @@ html{
 
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: "Noto Sans", "FontAwesome", sans-serif;
     background-color: #f7f7f7;
     margin: 0;
     color: #333;
@@ -20,6 +20,11 @@ h2{font-size: 3.7em;}
 h3{font-size: 2em;}
 li{list-style: none;}
 li{font-size: 1.25em;}
+
+
+
+
+
 
 
 header button{
@@ -146,6 +151,10 @@ header a:hover{
 
 
 
+
+
+
+
         
 #que-hacemos{
     background-color: rgba(30,30,30);
@@ -233,12 +242,12 @@ header a:hover{
 }
 
 
-#movable-text {
+#datos-relevantes .movable-text {
     position: relative;
     font-size: 20px;
     text-align: center;
     animation: jump 3s ease-in-out infinite;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 @keyframes jump {
@@ -256,7 +265,9 @@ header a:hover{
 
 
 
-
+#como-puedes-ayudar {
+    background-color: #000;
+}
 
 
 
@@ -268,10 +279,26 @@ header a:hover{
 }
 
 
+#como-puedes-ayudar h2{
+    color: #ffffff;
+}
+
+
 #como-puedes-ayudar li{
+    color: #ffffff;
     margin: 15px 0px;
     font-weight: bold;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 #listo-para-cambio button{
@@ -341,12 +368,19 @@ footer .container{
         padding-bottom: 0;
         padding-right: 20px;
 
+
+
+
+
+
+
     }
     #somos-ecofood {
         margin-top: 0px;
         margin: 0;
     }
     
+
 
     #somos-ecofood .img-container{display: flex;
         border-radius: 50px;
@@ -365,6 +399,18 @@ footer .container{
         background-position: center center; 
         }
     
+    
+
+
+
+
+
+
+
+
+
+
+
         #somos-ecofood .container{
             display: flex;
             height: 80vh;
@@ -379,48 +425,40 @@ footer .container{
         }
 
 
+
+
+
+
+
+
+
+
+
+
         #datos-relevantes {
             color: #000;
+            background-color: rgb(255, 255, 255);
 
             }
 
-        #datos-relevantes .container{
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            flex-direction: column;
-            height: 90vh;
-    
-            color: white;
-            background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        ),
-        url('img/desperdicio.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-            
-            
-            
-        
-            
-        }
 
 
 
-        #datos-relevantes h2{
-            font-size: 140px;
-        }
+
+
+
+            #datos-relevantes h2 {
+                font-size: 140px;
+                text-align: center;
+            }
+            
     
 
-        #movable-text{
+        #datos-relevantes .movable-text{
+            margin: 30px;
             font-size: 2.0em;
             font-weight: bold;
-            padding: 10px 20px;
+            padding: 20px 20px;
             border-radius: 50px;
             border: 2px solid rgba(0, 0, 0, 0.5);
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
@@ -429,6 +467,51 @@ footer .container{
         }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        #si-tienes-dudas-contactanos{
+            margin: 1px;
+        }
+
+
+
+        #si-tienes-dudas-contactanos .container {
+            display: flex;
+            flex-direction: column;  
+            justify-content: center;
+            align-items: center;  
+            height: 100%;  
+            width: 100%;   
+            margin: auto;
+        }
+        
+        #si-tienes-dudas-contactanos .container button {
+            margin-top: 20px;  
+            width: 350px;
+            padding: 5px;   
+            margin: 5px 0;   
+        }
+        
+        
 
 
 
