@@ -68,7 +68,7 @@ header{
     background-color: rgb(228, 221, 221);
     padding: 5px 5px;
     text-align: left;
-
+    z-index: 2;
 }
 
 
@@ -136,11 +136,30 @@ header a:hover{
         padding: 200px 12px;
         }
 
+
+
+
+
+
+
+
+
+
+
+        
 #que-hacemos{
     background-color: rgba(30,30,30);
     color: white;
     text-align: center;
 }
+
+
+#que-hacemos button{
+    font-size: 2em;
+}
+
+
+
 
 
 #que-hacemos .container{
@@ -149,8 +168,26 @@ header a:hover{
 
 #que-hacemos h2{
     margin-top: 0;
-    font-size: 3.2m;
+    font-size: 5em;
 }
+
+
+#que-hacemos h3{
+    font-size: 2.5em;
+}
+
+
+#que-hacemos p{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -163,6 +200,8 @@ header a:hover{
     margin: 20px;
     border-radius: 15px;
 }
+
+
 
 .cartas:first-child{
     background-image: linear-gradient(
@@ -180,7 +219,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ),
-    url('img/desperdicio.webp');
+    url('img/conectamos.jpg');
 }
 
 
@@ -194,19 +233,33 @@ header a:hover{
 }
 
 
-
-#datos-relevantes .container{
+#movable-text {
+    position: relative;
+    font-size: 20px;
     text-align: center;
-    padding: 200px 12px;
+    animation: jump 3s ease-in-out infinite;
+    margin-top: 100px;
+}
+
+@keyframes jump {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: -20px;  
+    }
+    100% {
+        top: 0;
+    }
 }
 
 
 
-#datos-relevantes li{
-    margin: 15px 0px;
-    font-weight: bold;
 
-}
+
+
+
+
 
 
 #como-puedes-ayudar .container{
@@ -360,20 +413,19 @@ footer .container{
 
 
         #datos-relevantes h2{
-            font-size: 70px;
+            font-size: 140px;
         }
     
 
-        .datos li{
-            font-size: 1.5em;
+        #movable-text{
+            font-size: 2.0em;
             font-weight: bold;
             padding: 10px 20px;
             border-radius: 50px;
             border: 2px solid rgba(0, 0, 0, 0.5);
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
             color: white;
-            background-color: green;
-            
+            background-color: green;            
         }
 
 
