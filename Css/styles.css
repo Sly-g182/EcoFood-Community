@@ -21,6 +21,12 @@ h3{font-size: 2em;}
 li{list-style: none;}
 li{font-size: 1.25em;}
 
+header .container{
+    margin-right: 20px; /* Espaciado entre los enlaces */
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
 
 
 
@@ -30,8 +36,15 @@ li{font-size: 1.25em;}
 header button{
     font-size: 1.0em;
     border-radius: 1px;
-    padding: 5px 10px;
+    padding: 5px 5px;
+    margin-right: 5px;
 }
+
+
+
+
+
+
 
 
 
@@ -56,6 +69,13 @@ button{
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     color: white;
     background-color: green;
+}
+
+
+
+#que-hacemos button:hover{
+    background-color: rgb(42, 204, 42);
+
 }
 
 
@@ -228,7 +248,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ),
-    url('img/');
+    url('img/conectamos.jpg');
 }
 
 
@@ -301,52 +321,53 @@ header a:hover{
 
 
 
-#listo-para-cambio button{
-    padding: 10px 20px;
-}
 
 
-#listo-para-cambio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 80vh;
+
+
+.footer {
+    background-color: #182634;
     color: white;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ),
-    url('img/cuidarmedio.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center; 
-    }
-
-#listo-para-cambio h2{
-    font-size: 7vw;
-    
+    padding: 30px 20px 10px;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-
-
-footer{
-    background-color:rgb(245, 245, 245);
-    margin: none;
-}
-
-footer p{
-    margin: 1px;
-}
-
-footer .container{
-    height: 150px;
-    justify-content: left;
+.footer-container {
     display: flex;
-    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
 }
+.footer-info, .footer-social {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-info p, .footer-social p, .footer-social a {
+    margin: 8px 0;
+}
+
+.footer-social a {
+    display: block;
+    text-decoration: none;
+    color: #ecf0f1;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #1abc9c;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    border-top: 1px solid #7f8c8d;
+    padding-top: 10px;
+}
+
 
 
 @media (min-width:720px){
@@ -398,6 +419,8 @@ footer .container{
         background-size: cover;
         background-position: center center; 
         }
+
+    
     
     
 
@@ -455,8 +478,8 @@ footer .container{
     
 
         #datos-relevantes .movable-text{
-            margin: 30px;
-            font-size: 2.0em;
+            margin: 20px;
+            font-size: 1.8em;
             font-weight: bold;
             padding: 20px 20px;
             border-radius: 50px;
@@ -466,6 +489,10 @@ footer .container{
             background-color: green;            
         }
 
+
+        #datos-relevantes .movable-text:hover{
+            background-color: rgb(42, 204, 42);
+        }
 
 
 

@@ -8,21 +8,24 @@
     
 
 </head>
-<body>
-    <header>
-        <div class="container">
-            <p class="logo">EcoFood</p>
-            <nav>
-                <a href="#somos-ecofood">Quienes Somos</a>
-                <a href="#que-hacemos">Que Hacemos</a>
-                <a href="#como-puedes-ayudar">Como Puedes Ayudar</a>
-                <a href="Comentarios.html">Comentarios</a>
-                <button onclick="location.href='Login.html'">Contacto</button>
-                <button onclick="location.href='Login.html'">Iniciar Sesión</button>
-            </nav>
-        </div>
-    </header>
-
+        <header>
+            <div class="container">
+                <p class="logo">EcoFood</p>
+                <nav>
+                    <div class="container">
+                        <a href="#somos-ecofood">Quienes Somos</a>
+                        <a href="#que-hacemos">Que Hacemos</a>
+                        <a href="#como-puedes-ayudar">Como Puedes Ayudar</a>
+                        <a href="Comentarios.html">Comentarios</a>
+                    </div>  
+                    <div class="nav-buttons">
+                        <button onclick="location.href='Login.html'">Contacto</button>
+                        <button onclick="location.href='Login.html'">Iniciar Sesión</button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    
     <section id="hero">
         <h1>EcoFood</h1>
         <button onclick="window.location.href='Registro.html'" class="btn btn-success mt-3">¡Únete Ya!</button>
@@ -31,7 +34,7 @@
     <section id="somos-ecofood">
         <div class="container">
             <div class="img-container"></div>
-            <div class="img-container-borde"></div>
+            <div class="img-container-border"></div>
             <div class="textoderecho">
                 <h2>Somos EcoFood</h2>
                 <p>Una organización comprometida con la reducción del desperdicio 
@@ -128,17 +131,25 @@
 
 
 
-    <footer>
-        <div class="container">
-            <p>Dirección: Villalobos 221, La Serena. <br>
-                Correo electrónico: ecofood@gmail.com <br>
-                Teléfono: +56 9 4433 1221 <br>
-                Facebook: <a href="">EcoFood_oficial</a> <br>
-                Instagram: <a href="">@ecofood_ofcial</a> <br>
-                Twitter: <a href="">@EcoFood_org</a>
-                </p>
+    <footer class="footer">
+        <div class="footer-container">
+        <div class="footer-info">
+            <p><strong>Dirección:</strong> Villalobos 221, La Serena</p>
+            <p><strong>Email:</strong> ecofood@gmail.com</p>
+            <p><strong>Teléfono:</strong> +56 9 4433 1221</p>
+        </div>
+        <div class="footer-social">
+            <p><strong>Síguenos:</strong></p>
+            <a href="#" class="social-link">Facebook: EcoFood_oficial</a>
+            <a href="#" class="social-link">Instagram: @ecofood_oficial</a>
+            <a href="#" class="social-link">Twitter: @EcoFood_org</a>
+        </div>
+        </div>
+        <div class="footer-bottom">
+        <p>&copy; 2025 EcoFood. Todos los derechos reservados.</p>
         </div>
     </footer>
+
 
 
 
