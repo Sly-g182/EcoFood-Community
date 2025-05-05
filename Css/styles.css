@@ -7,12 +7,16 @@ html{
 }
 
 
+
+
+
 body{
     font-family: "Noto Sans", "FontAwesome", sans-serif;
     background-color: #f7f7f7;
     margin: 0;
     color: #333;
 }
+
 
 
 h1{font-size: 6.0em;}
@@ -22,7 +26,7 @@ li{list-style: none;}
 li{font-size: 1.25em;}
 
 header .container{
-    margin-right: 20px; /* Espaciado entre los enlaces */
+    margin-right: 30px; 
     text-decoration: none;
     color: #000;
     font-weight: bold;
@@ -35,9 +39,9 @@ header .container{
 
 header button{
     font-size: 1.0em;
-    border-radius: 1px;
+    border-radius: 10px;
     padding: 5px 5px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 
@@ -158,8 +162,19 @@ header a:hover{
 
 #somos-ecofood{
         text-align: center;
-        padding: 200px 12px;
+        padding: 100px 15px;
+        color: #000;
         }
+
+        #somos-ecofood h2{
+            color: green;
+            
+            
+        }
+
+        
+
+
 
 
 
@@ -376,6 +391,8 @@ header a:hover{
         width: 100%;
     }
 
+    
+
 
 
 
@@ -461,6 +478,7 @@ header a:hover{
         #datos-relevantes {
             color: #000;
             background-color: rgb(255, 255, 255);
+            padding: 1px 15px;
 
             }
 
@@ -496,7 +514,8 @@ header a:hover{
 
 
 
-
+        #como-puedes-ayudar
+        
 
 
 
@@ -516,7 +535,8 @@ header a:hover{
 
 
         #si-tienes-dudas-contactanos{
-            margin: 1px;
+            margin: 0px;
+            background: linear-gradient(135deg, #1cca21, #e8cd21);
         }
 
 
@@ -528,7 +548,9 @@ header a:hover{
             align-items: center;  
             height: 100%;  
             width: 100%;   
-            margin: auto;
+            margin: 0px;
+            background: linear-gradient(135deg, #ffc801, #d82bd8);
+            padding: 5em 1px;
         }
         
         #si-tienes-dudas-contactanos .container button {
@@ -543,7 +565,7 @@ header a:hover{
 
 
 
-
+        
 
 
 }
