@@ -146,7 +146,7 @@ header a:hover{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 90vh;
+    height: 95vh;
     color: white;
     background-image: linear-gradient(
         0deg,
@@ -489,7 +489,7 @@ header a:hover{
 
 
             #datos-relevantes h2 {
-                font-size: 140px;
+                font-size: 120px;
                 text-align: center;
             }
             
@@ -514,7 +514,40 @@ header a:hover{
 
 
 
-        #como-puedes-ayudar
+        #como-puedes-ayudar{
+            background: linear-gradient(135deg, #1cca21, #e8cd21);
+            padding: 0px 20px;
+            margin-top: 1px;
+        }
+
+        #como-puedes-ayudar .container{
+            margin-top: 1px;
+            padding: 10px 15px;
+            
+        }
+
+
+
+
+        #como-puedes-ayudar li{
+            color: white;
+            font-size: 30px;
+        }
+
+        #como-puedes-ayudar h2{
+            font-size: 100px;
+            padding: 10px 20px;
+        }
+
+        #como-puedes-ayudar .imagen1{
+            height: 300px;
+            border-radius: 300px;
+            
+
+        }
+
+
+            
         
 
 
@@ -534,31 +567,30 @@ header a:hover{
 
 
 
-        #si-tienes-dudas-contactanos{
-            margin: 0px;
-            background: linear-gradient(135deg, #1cca21, #e8cd21);
-        }
-
-
-
-        #si-tienes-dudas-contactanos .container {
+        #si-tienes-dudas-contactanos {
             display: flex;
-            flex-direction: column;  
-            justify-content: center;
-            align-items: center;  
-            height: 100%;  
-            width: 100%;   
-            margin: 0px;
+            flex-direction: row; 
+            justify-content: space-between; 
+            align-items: flex-start; 
             background: linear-gradient(135deg, #ffc801, #d82bd8);
-            padding: 5em 1px;
+            padding: 5em 1em;
+            width: 100%;
+            margin: 0;
+        }
+        
+        #si-tienes-dudas-contactanos .container,
+        #si-tienes-dudas-contactanos .container-derecha {
+            width: 45%; 
         }
         
         #si-tienes-dudas-contactanos .container button {
-            margin-top: 20px;  
-            width: 350px;
-            padding: 5px;   
-            margin: 5px 0;   
+            margin-top: 20px;
+            width: 100%;
+            padding: 1px 5px;
+            
         }
+
+        
         
         
 
