@@ -6,18 +6,12 @@ html{
     scroll-behavior: smooth;
 }
 
-
-
-
-
 body{
     font-family: "Noto Sans", "FontAwesome", sans-serif;
     background-color: #f7f7f7;
     margin: 0;
     color: #333;
 }
-
-
 
 h1{font-size: 6.0em;}
 h2{font-size: 3.7em;}
@@ -32,25 +26,12 @@ header .container{
     font-weight: bold;
 }
 
-
-
-
-
-
 header button{
     font-size: 1.0em;
     border-radius: 10px;
     padding: 5px 5px;
     margin-right: 10px;
 }
-
-
-
-
-
-
-
-
 
 button{
     font-size: 2.5em;
@@ -63,7 +44,6 @@ button{
     background-color: green;
 }
 
-
 #que-hacemos button{
     font-size: 1.0em;
     font-weight: bold;
@@ -75,13 +55,10 @@ button{
     background-color: green;
 }
 
-
-
 #que-hacemos button:hover{
     background-color: rgb(42, 204, 42);
 
 }
-
 
 button:hover{
     background-color: rgb(42, 204, 42);
@@ -92,15 +69,12 @@ button:hover{
     margin: auto;
 }
 
-
 header{
     background-color: rgb(228, 221, 221);
     padding: 5px 5px;
     text-align: left;
     z-index: 2;
 }
-
-
 
 header .logo{
     margin: 0;
@@ -110,13 +84,11 @@ header .logo{
     font-size: 1.6em;
 }
 
-
 header .container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 
 header nav{
     display: flex;
@@ -124,7 +96,6 @@ header nav{
     text-align: center;
     padding-bottom: 25px;
 }
-
 
 header a{
     font-size: 15px;
@@ -134,11 +105,9 @@ header a{
     color: black;
 }
 
-
 header a:hover{
     color: rgb(47, 204, 42);
 }
-
 
 #hero {
     display: flex;
@@ -159,7 +128,6 @@ header a:hover{
     background-position: center center; 
     }
 
-
 #somos-ecofood{
         text-align: center;
         padding: 100px 15px;
@@ -172,25 +140,6 @@ header a:hover{
             
         }
 
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
 #que-hacemos{
     background-color: rgba(30,30,30);
     color: white;
@@ -202,10 +151,6 @@ header a:hover{
     font-size: 2em;
 }
 
-
-
-
-
 #que-hacemos .container{
     padding: 150px 12px;
 }
@@ -215,27 +160,13 @@ header a:hover{
     font-size: 5em;
 }
 
-
 #que-hacemos h3{
     font-size: 2.5em;
 }
 
-
 #que-hacemos p{
     font-size: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 #que-hacemos .cartas{
     background-position: center center;
@@ -245,8 +176,6 @@ header a:hover{
     border-radius: 15px;
 }
 
-
-
 .cartas:first-child{
     background-image: linear-gradient(
         0deg,
@@ -254,7 +183,6 @@ header a:hover{
         rgba(0,0,0,0.5)
     ),
     url('img/educacion-alimentacion-servicios-nodrit.jpg');
-
 }
 
 .cartas:nth-child(2){
@@ -266,7 +194,6 @@ header a:hover{
     url('img/conectamos.jpg');
 }
 
-
 .cartas:nth-child(3){
     background-image: linear-gradient(
         0deg,
@@ -275,7 +202,6 @@ header a:hover{
     ),
     url('img/redes-de-alta-velocidad-cuales-son-y-como-funcionan.webp');
 }
-
 
 #datos-relevantes .movable-text {
     position: relative;
@@ -297,48 +223,24 @@ header a:hover{
     }
 }
 
-
-
-
 #como-puedes-ayudar {
     background-color: #000;
 }
-
-
-
-
 
 #como-puedes-ayudar .container{
     text-align: center;
     padding: 200px 12px;
 }
 
-
 #como-puedes-ayudar h2{
     color: #ffffff;
 }
-
 
 #como-puedes-ayudar li{
     color: #ffffff;
     margin: 15px 0px;
     font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .footer {
     background-color: #182634;
@@ -383,18 +285,11 @@ header a:hover{
     padding-top: 10px;
 }
 
-
-
 @media (min-width:720px){
     header{
         position: fixed;
         width: 100%;
     }
-
-    
-
-
-
 
     header .container{
         flex-direction: row;
@@ -406,20 +301,12 @@ header a:hover{
         padding-bottom: 0;
         padding-right: 20px;
 
-
-
-
-
-
-
     }
     #somos-ecofood {
         margin-top: 0px;
         margin: 0;
     }
     
-
-
     #somos-ecofood .img-container{display: flex;
         border-radius: 50px;
         border: 2px solid black;
@@ -437,20 +324,6 @@ header a:hover{
         background-position: center center; 
         }
 
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
         #somos-ecofood .container{
             display: flex;
             height: 80vh;
@@ -464,36 +337,17 @@ header a:hover{
             
         }
 
-
-
-
-
-
-
-
-
-
-
-
         #datos-relevantes {
             color: #000;
             background-color: rgb(255, 255, 255);
             padding: 1px 15px;
-
             }
-
-
-
-
-
-
 
             #datos-relevantes h2 {
                 font-size: 120px;
                 text-align: center;
             }
             
-    
 
         #datos-relevantes .movable-text{
             margin: 20px;
@@ -507,12 +361,9 @@ header a:hover{
             background-color: green;            
         }
 
-
         #datos-relevantes .movable-text:hover{
             background-color: rgb(42, 204, 42);
         }
-
-
 
         #como-puedes-ayudar{
             background: linear-gradient(135deg, #1cca21, #e8cd21);
@@ -525,9 +376,6 @@ header a:hover{
             padding: 10px 15px;
             
         }
-
-
-
 
         #como-puedes-ayudar li{
             color: white;
@@ -546,27 +394,6 @@ header a:hover{
 
         }
 
-
-            
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         #si-tienes-dudas-contactanos {
             display: flex;
             flex-direction: row; 
@@ -583,21 +410,9 @@ header a:hover{
             width: 45%; 
         }
         
-        #si-tienes-dudas-contactanos .container button {
-            margin-top: 20px;
+        #si-tienes-dudas-contactanos button {
             width: 100%;
-            padding: 1px 5px;
+            padding: 1px 1px;
             
         }
-
-        
-        
-        
-
-
-
-
-        
-
-
 }
